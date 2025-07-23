@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JayMols | Photography & Videography</title>
+  <link rel="shortcut icon" href="./image/logo3.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #dddddd;
+      color: #333;
+    }
+
+    /* Sticky Navbar Enhancements */
+    .sticky-top {
+      z-index: 1030;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('./image/bg1.jpg') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* Logo */
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+      margin-left: -1em;
+    }
+
+    /* Logo2 */
+    .navbar-brand2 img {
+      height: 120px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .gallery img {
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .contact a {
+      color: #ffc107;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>        
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 sticky-top">
+    <a class="navbar-brand" href="#">
+      <img src="./image/logo1.png" alt="JayMols Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>JayMols Studio</h1>
+      <p>Photography | Cinematography | Videography</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <h2 id="services"></h2>
+  <br>
+  <br>
+  <section class="container py-5">
+  <h2 class="mb-4 text-center">Services</h2>
+  <p class="text-center mb-5 px-3">
+    Whether you're celebrating milestones, capturing love stories, or creating standout visuals, I offer tailored photography and video services designed to bring your vision to life. Let’s turn moments into timeless art.
+  </p>
+  <div class="row g-4">
+    <!-- Solo -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100 d-flex flex-column">
+        <div class="card-body flex-grow-1">
+          <h5 class="card-title">📸 Solo – <strong>₱499</strong></h5>
+          <p class="card-text">
+            ➤ 1 location<br>
+            ➤ 2 hours<br>
+            ➤ 10 edited shots (soft copy)<br>
+            ➤ Output delivery 3–5 Days via Google Drive / USB
+          </p>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <a href="mailto:jaymolsbusiness1@gmail.com?subject=Solo%20Photoshoot%20Booking&body=Hi%20Jay%2C%20I'm%20interested%20in%20the%20Solo%20Photoshoot%20package.%20Please%20send%20me%20more%20details." 
+            class="btn btn-primary w-100">📩 Email me!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Couple / Barkada -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100 d-flex flex-column">
+        <div class="card-body flex-grow-1">
+          <h5 class="card-title">👫 Couple / Barkada – <strong>₱899</strong></h5>
+          <p class="card-text">
+            ➤ Good for 3-6 people<br>
+            ➤ 1 outfit<br>
+            ➤ 1 location<br>
+            ➤ 2 hours<br>
+            ➤ 15 edited photos (soft copy)<br>
+            ➤ Output delivery 3–5 Days via Google Drive / USB
+          </p>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <a href="mailto:jaymolsbusiness1@gmail.com?subject=Couple%20or%20Barkada%20Booking&body=Hi%20Jay%2C%20we're%20interested%20in%20the%20Couple/Barkada%20Photoshoot%20package.%20Let%20us%20know%20what%20dates%20are%20available." 
+            class="btn btn-primary w-100">📩 Email me!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cinematic Short Video -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100 d-flex flex-column">
+        <div class="card-body flex-grow-1">
+          <h5 class="card-title">🎬 Cinematic Short Video – from <strong>₱1500</strong></h5>
+          <p class="card-text">
+            ➤ 1–3 minute short film<br>
+            ➤ Scripted or freestyle shoot<br>
+            ➤ 1–2 locations<br>
+            ➤ Color-graded footage<br>
+            ➤ Delivered in HD format via Google Drive / USB<br>
+            ➤ Optional vertical cut for reels
+          </p>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <a href="mailto:jaymolsbusiness1@gmail.com?subject=Cinematic%20Video%20Booking&body=Hey%20Jay%2C%20I’d%20love%20to%20book%20your%20Cinematic%20Short%20Video%20package.%20Can%20you%20share%20available%20dates%20and%20details%3F" 
+            class="btn btn-primary w-100">📩 Email me!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graduation -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100 d-flex flex-column">
+        <div class="card-body flex-grow-1">
+          <h5 class="card-title">🎓 Graduation – <strong>₱1199</strong></h5>
+          <p class="card-text">
+            ➤ 2 outfits (casual & toga)<br>
+            ➤ 1 location<br>
+            ➤ 20 edited photos + 1 collage<br>
+            ➤ 1 hour<br>
+            ➤ Optional framed print (+₱200)
+          </p>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <button class="btn btn-secondary w-100" disabled>🚧 Available Soon</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Creative -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100 d-flex flex-column">
+        <div class="card-body flex-grow-1">
+          <h5 class="card-title">🎭 Creative / Concept – from <strong>₱1499</strong></h5>
+          <p class="card-text">
+            ➤ Styled shoot<br>
+            ➤ Props & setup<br>
+            ➤ 25 edited photos<br>
+            ➤ 1.5 hours<br>
+            ➤ Moodboard planning
+          </p>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <button class="btn btn-secondary w-100" disabled>🚧 Available Soon</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h4 class="mt-5 text-center">ADD-ON</h4>
+  <p class="text-center mb-4 px-3">
+    Enhance your photoshoot experience with our premium add-ons, from framed prints to extra edits and custom videos. Perfect for adding a personal touch or leveling up your final output.
+  </p>
+
+  <div class="row g-4 mt-3">
+
+    <!-- Extra Edited Photo -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">📷 Extra Edited Photo</h5>
+          <p class="card-text">₱50 each</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Raw Files -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">📁 Raw Files (Drive link)</h5>
+          <p class="card-text">₱200</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outfit Change -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">👕 Outfit Change</h5>
+          <p class="card-text">₱100 per outfit</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Printed Photo -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">🖼️ Printed 5R Photo</h5>
+          <p class="card-text">₱50 each</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlight Video -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">🎬 Highlight Video (30-60s reel)</h5>
+          <p class="card-text">₱300</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Out-of-Town Fee -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">🚗 Out-of-Town Fee</h5>
+          <p class="card-text">Starts at ₱100</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  </section>
+
+  <hr>  
+  <!-- Gallery -->
+  <h2 id="gallery"></h2>
+  <br>
+  <br>
+  <section id="gallery" class="container py-5">
+  <h2 class="mb-4 text-center">Gallery</h2>
+  <p class="text-center mb-5 px-3">
+    A glimpse into the stories I’ve captured — raw, edited, real, and timeless. Every photo here is a frozen heartbeat, a memory wrapped in light. This is more than photography, it’s storytelling through the lens.
+  </p>
+
+    <div class="row g-4">
+
+      <!-- Embed 1 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjay.mols.2025%2Fposts%2Fpfbid02wYegHAc52RLe95WoVGMQuYmFUGQYMhxN4ixqLL9QkPtK2LSBGKB8f7bGzQ5uJXLZl&show_text=true&width=500" 
+            style="border:none;overflow:hidden;" 
+            scrolling="no" frameborder="0" allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Embed 3 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjay.mols.2025%2Fposts%2Fpfbid0BfHriotzwqxV65qfc9nnRViMLNgQimuz3CX6YN5F8aCkz6R4aCjR65tjQQS2Y6mAl&show_text=true&width=500" 
+            style="border:none;overflow:hidden;" 
+            scrolling="no" frameborder="0" allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Embed 4 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjay.mols.2025%2Fposts%2Fpfbid0YjTjgs8rLBvp8eS9buyxS17aH7nCWsf4Y7eWHgu6Qgf89Grn2TLeJEBgAV4E5ak4l&show_text=true&width=500" 
+            style="border:none;overflow:hidden;" 
+            scrolling="no" frameborder="0" allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Embed 6 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjay.mols.2025%2Fposts%2Fpfbid02L8BwXLtghXTtE2rewxDmvn7jud4NnLErrwDStfXuHptNDuHhsevLLqZBWyK45nsml&show_text=true&width=500" 
+            style="border:none;overflow:hidden;" 
+            scrolling="no" frameborder="0" allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-7">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjay.mols.2025%2Fposts%2Fpfbid02ZEwuaN1qZLt7up1ZGwLumWYMR31oNqqAgsa5H7PAFyG8XcLXFDFfGsCRE9BCpdqWl&show_text=true&width=500" width="500" height="709" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+
+      <!-- Embed 6 -->
+      <div class="col-md-6 col-lg-5">
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjay.mols.2025%2Fposts%2Fpfbid021p81BdjY9HrF5cfE6j2uXtiFzRsaapnA47Xn3T6S8KMb2Qb2NFioToNU9fsEePQol&show_text=true&width=500" width="500" height="665" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr>
+  <!-- Video Section -->
+  <h2 id="videos"></h2>
+  <br>
+  <br>
+  <section id="videos" class="container py-5">
+  <h2 class="mb-4 text-center">Videos</h2>
+  <p class="text-center mb-4 px-3">
+    Motion with meaning. These are more than just clips — they're cinematic slices of life, crafted to tell stories, stir emotions, and bring moments to life through film.
+  </p>
+
+    <div class="row g-4">
+      
+      <!-- Video Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <video class="card-img-top" controls>
+            <source src="./video/retreat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">Birds of a Feather</h5>
+            <p class="card-text">A glimpse of our amazing retreat moments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <video class="card-img-top" controls>
+            <source src="./video/chosen.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">If, chosen</h5>
+            <p class="card-text">In a world where love is rushed, he chose stillness. He chose himself. Because some journeys are meant to be walked alone and love, after all, is patience.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <video class="card-img-top" controls>
+            <source src="./video/graduations.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">The Graduation</h5>
+            <p class="card-text">The End Of School Year.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Card 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <video class="card-img-top" controls>
+            <source src="./video/pakbet.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">Pakbet</h5>
+            <p class="card-text">Lutong bahay hits different mas masarap ‘pag may kasamang pagmamahal! Charezz!. Simpleng luto, simpleng saya. Basta may kanin, solve na! 🍚🔥</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Card 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <video class="card-img-top" controls>
+            <source src="./video/signature.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">The signature</h5>
+            <p class="card-text">“𝑆𝑜𝑚𝑒𝑡𝑖𝑚𝑒𝑠 𝑦𝑜𝑢 𝑚𝑒𝑒𝑡 𝑎 𝑝𝑒𝑟𝑠𝑜𝑛, 𝑎𝑛𝑑 𝑦𝑜𝑢 𝑗𝑢𝑠𝑡 𝑐𝑙𝑖𝑐𝑘 𝑦𝑜𝑢’𝑟𝑒 𝑐𝑜𝑚𝑓𝑜𝑟𝑡𝑎𝑏𝑙𝑒 𝑤𝑖𝑡ℎ 𝑡ℎ𝑒𝑚, 𝑙𝑖𝑘𝑒 𝑦𝑜𝑢’𝑣𝑒 𝑘𝑛𝑜𝑤𝑛 𝑡ℎ𝑒𝑚 𝑦𝑜𝑢𝑟 𝑤ℎ𝑜𝑙𝑒 𝑙𝑖𝑓𝑒, 𝑎𝑛𝑑 𝑦𝑜𝑢 𝑑𝑜𝑛’𝑡 ℎ𝑎𝑣𝑒 𝑡𝑜 𝑝𝑟𝑒𝑡𝑒𝑛𝑑 𝑡𝑜 𝑏𝑒 𝑎𝑛𝑦𝑜𝑛𝑒 𝑜𝑟 𝑎𝑛𝑦𝑡ℎ𝑖𝑛𝑔.” – 𝘜𝘯𝘬𝘯𝘰𝘸𝘯</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Card 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <video class="card-img-top" controls>
+            <source src="./video/whataday.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">What A Day!</h5>
+            <p class="card-text">"𝑌𝑒𝑠 𝑚𝑎𝑚𝑎, 𝐼'𝑚 𝑔𝑜𝑖𝑛𝑔 𝑜𝑢𝑡 𝑤𝑖𝑡ℎ 𝑚𝑦 𝑓𝑟𝑖𝑒𝑛𝑑𝑠"
+— 𝐀𝐥𝐨𝐧𝐞_𝐤𝐢𝐝</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="text-center mb-5">
+    <p><strong>🎥 Visit my Facebook to see more cinematic video content:</strong></p>
+    <a href="https://www.facebook.com/jay.cabanos.molina.2025" target="_blank" class="btn btn-primary me-2 mb-2">
+      <i class="bi bi-facebook me-1"></i> Jay Cabanos Molina
+    </a>
+    <a href="https://www.facebook.com/jay.mols.2025" target="_blank" class="btn btn-primary mb-2">
+      <i class="bi bi-facebook me-1"></i> JayMols Studio
+    </a>
+  </div>
+  <hr>  
+  <!-- About -->
+  <h2 id="about"></h2>
+  <br>
+  <br>
+  <section id="about" class="container py-5">
+    <h2 class="mb-3">About Me</h2>
+
+    <p>Hey there! I’m Jay, a self-taught photographer, editor, and visual storyteller based in Gingoog City, Misamis Oriental. I wasn’t born with a camera in my hand, but I was born with curiosity, creativity, and the kind of hunger that no one could ignore.</p>
+
+    <p>I started my journey in the simplest way possible, with just a smartphone and a dream. Back when I was in my first year of college, I didn’t have a fancy camera, editing software, or any training. What I had was passion. I started editing my photos using low-budget mobile apps, experimenting with filters and enhancements I discovered through TikTok tutorials, YouTube videos, and free sites. Every shot I took was a lesson. Every mistake taught me something new.</p>
+
+    <p>I still remember how I'd stay up late watching tutorials, replaying the same steps until I got them right, sometimes with shaky hands, blurry shots, and busted storage space. But I didn’t stop. From first year to fourth year, I kept grinding. I borrowed equipment when I could, practiced on friends, shot anything I could, birthdays, walks, sunsets, shadows on walls, just to keep improving.</p>
+
+    <p>Eventually, my parents saw how serious I was. They saw the fire I had. And one day, they surprised me with a Nikon D3200. I thanks god for this unforgetable gift that moment changed my life. It wasn't just a gift, it was the key that unlocked a whole new world. Holding that camera for the first time felt like holding my future. It wasn’t perfect or brand-new, but it was mine. And with it, I built something real.</p>
+
+    <p>From there, I dove deeper, learning composition, lighting, storytelling, and color grading. I studied the way emotions moved through people’s faces, how light kissed the skin, how stories could live forever in a single frame. My camera became more than just gear. It became my voice.</p>
+
+    <p>Today, I specialize in capturing raw, real, and beautiful moments, whether it’s a quiet solo portrait, a chaotic barkada shoot, a love-filled prenup, or a powerful cinematic short film. Every shoot I do is a collaboration of souls, stories, and light.</p>
+
+    <p>I know what it’s like to start from nothing. I know how powerful it is when someone believes in you. So if you’re reading this, maybe you’re a student, a dreamer, or just someone who wants to be seen through a lens that understands, know this: you’re already enough. And if I’m available, I can make you a photo shoot that brings out the best in you. Just message me. Let’s create something real.</p>
+  </section>
+
+  <!-- Contact -->
+  <h2 id="contact"></h2>
+  <br>
+  <br>
+  <section id="contact" class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <a class="navbar-brand2" href="#">
+        <img src="./image/logo1.png" alt="JayMols Logo">
+      </a>
+      <p class="lead mb-4">Let your personality shine through timeless photos, perfect for socials, gifts, portfolios, or just to treat yourself. Book now, flex later.</p>
+      
+      <div class="row justify-content-center mb-4">
+        <!-- Email -->
+        <div class="col-md-4 mb-3">
+          <div class="card bg-secondary border-0 h-100 shadow-lg text-white">
+            <div class="card-body">
+              <i class="bi bi-envelope-fill fs-1 mb-2"></i>
+              <h5 class="card-title">Email</h5>
+              <p class="card-text"><a href="mailto:jaymolsbusiness1@gmail.com" class="text-white text-decoration-underline">jaymolsbusiness1@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Facebook / Instagram -->
+        <div class="col-md-4 mb-3">
+          <div class="card bg-secondary border-0 h-100 shadow-lg text-white">
+            <div class="card-body">
+              <i class="bi bi-instagram fs-1 mb-2"></i>
+              <h5 class="card-title">Socials</h5>
+              <p class="card-text">
+                <a href="https://www.facebook.com/jay.mols.2025" target="_blank" class="text-white text-decoration-underline">Facebook</a> /
+                <a href="https://www.instagram.com/jay_mols_studio/" target="_blank" class="text-white text-decoration-underline">Instagram</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location (Optional) -->
+        <div class="col-md-4 mb-3">
+          <div class="card bg-secondary border-0 h-100 shadow-lg text-white">
+            <div class="card-body">
+              <i class="bi bi-geo-alt-fill fs-1 mb-2"></i>
+              <h5 class="card-title">Based In</h5>
+              <p class="card-text">📍 Gingoog City, Philippines</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <a href="mailto:jaymolsbusiness1@gmail.com" class="btn btn-outline-light btn-lg px-5 py-2 rounded-pill shadow">📸 Email Me Now!</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-3">
+    <p class="mb-0 text-center">© 2025 JayMols Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
